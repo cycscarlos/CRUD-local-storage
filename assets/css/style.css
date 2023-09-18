@@ -1,0 +1,69 @@
+@import "header.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans serif;
+}
+.container {
+  max-width: 800px;
+  margin: 150px auto;
+  padding: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.crud__title {
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+.crud__form {
+  display: flex;
+  margin: 10px 0;
+}
+.form__input {
+  flex: 1; /* toma todo el width disponible en el contenedor, es decir: 800px del max-width*/
+  padding: 5px;
+  margin-right: 10px; /* separar los elementos entre ellos */
+  font-size: 1rem;
+}
+.button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover {
+  transform: scale(1.2);
+}
+.button--primary {
+  background-color: #049c10;
+  color: white;
+}
+.button--secondary {
+  background-color: #ffc107;
+  color: white;
+}
+.button--tertiary {
+  background-color: #dc3545;
+  color: white;
+}
+.crud__table {
+  width: 100%; /* en este caso toma los 800px disponible del contenedor */
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+.table__header,
+.table__body td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.table__header {
+  background-color: #f0f0f0;
+}
+.table__body td:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+}

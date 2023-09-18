@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="https://use.fontawesome.com/698a367122.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Header</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/img/logo.jpg" alt="Logo" />
+        <p class="title">zCoder<span> ...on Social Media</span></p>
+      </div>
+      <div class="nav">
+        <i class="fa fa-phone" aria-hidden="true">+58 0414 324 63 96</i>
+        <p>Carlos Colmenares A.</p>
+        <a
+          href="https://carlos-colmenares-a.netlify.app"
+          target="_blank"
+          rel="noopener"
+          >https://carlos-colmenares-a.netlify.app</a
+        >
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="crud">
+        <h1 class="crud__title">CRUD de usuarios</h1>
+        <form action="" id="formRegister" class="crud__form">
+          <input
+            type="text"
+            name="name"
+            id="nameInput"
+            placeholder="Nombre"
+            class="form__input"
+          />
+          <input
+            type="text"
+            name="email"
+            id="emailInput"
+            placeholder="Correo"
+            class="form__input"
+          />
+          <button
+            type="submit"
+            id="submitButton"
+            class="button button--primary"
+          >
+            Agregar
+          </button>
+        </form>
+
+        <table class="crud__table">
+          <thead>
+            <tr>
+              <th class="table__header">Nombre</th>
+              <th class="table__header">Correo</th>
+              <th class="table__header">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody" class="table__body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
