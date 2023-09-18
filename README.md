@@ -1,4 +1,4 @@
-# Proyecto de Animación de Átomo
+# Proyecto CRUD Local Storage
 
 Este proyecto consiste en la creación de un aplicación tipo CRUD (Create, Replace, Update, and Delete), solo que la data ingresada por el usuario será almacenada en el Local Storage del navegador (y no en BDB como comumente se hace). Esto permite que así se cierre la aplicación la data permanecerá en la meoria del Browser. HTML, CSS y JAVASCRIPT.
 
