@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <script src="https://use.fontawesome.com/698a367122.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Registros Almacenados en Local Storage</title>
+  </head>
+  <body>
+    <h1>Registros Almacenados</h1>
+    <table></table>
+      <thead>
+        <tr>
+          <th >Nombre</th>
+          <th >Email</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <script>
+      // Obtener los datos del Local Storage
+      const data = JSON.parse(localStorage.getItem("formData")) || [];
+
+      // Renderizar los registros en la tabla
+      const tableBody = document.getElementById("tableBody");
+      data.forEach((item) => {
+        const row = document.createElement("tr");
+        const nameCell = document.createElement("td");
+        const emailCell = document.createElement("td");
+
+        nameCell.textContent = item.name;
+        emailCell.textContent = item.email;
+
+        row.appendChild(nameCell);
+        row.appendChild(emailCell);
+
+        tableBody.appendChild(row);
+      });
+    </script>
+  </body>
+</html>
